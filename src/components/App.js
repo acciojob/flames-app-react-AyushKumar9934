@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        <input value={this.state.input1}
+        <input name="name1" value={this.state.input1}
           onChange={(e) => {
             this.setState({ input1: e.target.value });
           }}
@@ -60,7 +60,7 @@ class App extends Component {
           placeholder="Enter first name"
         />
         <span>
-          <input value={this.state.input2}
+          <input name="name2" value={this.state.input2}
             onChange={(e) => {
               this.setState({ input2: e.target.value });
             }}
